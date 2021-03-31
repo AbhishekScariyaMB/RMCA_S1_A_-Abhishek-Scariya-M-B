@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<script type="text/javascript" src="calendarize.js"></script>
+		<script type="text/javascript">
+
+			function myFunction() {
+			var $calendar = document.getElementById("calendar");
+			var currentYear = document.getElementById("year").value;
+			var calendarize = new Calendarize();
+			calendarize.buildYearCalendar($calendar, currentYear);
+			}
+		</script>
+	<body>
+	
+	Year: <input type="text" onfocus="this.value=''" id="year">
+<button onclick="myFunction()">submit</button>
+		<div id="calendar"></div>
+		
+	</body>
+</html>
+
+
+
